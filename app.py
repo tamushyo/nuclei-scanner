@@ -29,7 +29,7 @@ def scan():
 ]
 
     try:
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=40)
     except Exception as e:
         return f"Scan error: {e}"
 
