@@ -18,7 +18,7 @@ def scan():
     "nuclei",
     "-u", target,
     "-t", "nuclei-templates/basic-check.yaml",
-    "-j",
+    "-jsonl",
     "-o", output,
     "-c", "1",
     "-rl", "1",
