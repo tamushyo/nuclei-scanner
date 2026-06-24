@@ -17,16 +17,16 @@ def scan():
     cmd = [
     "nuclei",
     "-u", target,
+    "-t", "nuclei-templates/basic-check.yaml",
     "-j",
     "-o", output,
-    "-tags", "tech",
     "-c", "1",
     "-rl", "1",
     "-timeout", "5",
     "-retries", "0",
     "-silent",
     "-duc"
-    ]
+]
 
     try:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
