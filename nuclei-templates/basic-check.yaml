@@ -1,10 +1,10 @@
 id: basic-http-check
 
 info:
-  name: Website Is Reachable
+  name: Website Responded - Demo Security Check
   author: student
-  severity: info
-  description: The target website responded to an HTTP request.
+  severity: medium
+  description: The target website responded. This is a demo check for the cloud scanner.
 
 http:
   - method: GET
